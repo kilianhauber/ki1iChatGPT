@@ -16,7 +16,7 @@ def predict(input):
         model="gpt-3.5-turbo",  # 10x billiger als Davinci, und besser. 0,002 $ pro 1k Token
         messages=None
     )
-    # Just the reply:
+    # Die Antwort:
     reply_content = completion.choices[0].message.content  # .replace('```python', '<pre>').replace('```', '</pre>')
 
     print(reply_content)
